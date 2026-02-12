@@ -85,22 +85,35 @@ This demonstrates significant cost reduction potential when integrating with LLM
 
 ## 🏗️ System Architecture
 
-CSV Upload
-↓
-Data Cleaning
-↓
-Automated EDA
-↓
-Column Importance Scoring
-↓
-Adaptive Schema Compression
-↓
-Token Estimation
-↓
-Cost Simulation
-↓
-Dashboard Visualization
-
+```
+            ┌──────────────┐
+            │  CSV Upload  │
+            └──────┬───────┘
+                   ↓
+            ┌──────────────┐
+            │ Data Cleaning│
+            └──────┬───────┘
+                   ↓
+            ┌──────────────┐
+            │  Automated   │
+            │     EDA      │
+            └──────┬───────┘
+                   ↓
+            ┌──────────────┐
+            │ Column       │
+            │ Importance   │
+            └──────┬───────┘
+                   ↓
+            ┌──────────────┐
+            │ Adaptive     │
+            │ Compression  │
+            └──────┬───────┘
+                   ↓
+            ┌──────────────┐
+            │ Token & Cost │
+            │  Estimation  │
+            └──────────────┘
+```
 
 ---
 
@@ -118,7 +131,7 @@ Dashboard Visualization
 
 1. Clone the repository:
 
-git clone https://github.com/YOUR_USERNAME/token-efficient-data-science-agent.git
+git clone https://github.com/suryapranav07/token-efficient-data-science-agent.git
 
 cd token-efficient-data-science-agent
 
